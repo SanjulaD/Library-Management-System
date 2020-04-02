@@ -1,0 +1,14 @@
+D:\Projects\C#\Library MS\bin\Debug\Library MS.exe.config
+D:\Projects\C#\Library MS\bin\Debug\Library MS.exe
+D:\Projects\C#\Library MS\bin\Debug\Library MS.pdb
+D:\Projects\C#\Library MS\obj\Debug\Library_MS.login.resources
+D:\Projects\C#\Library MS\obj\Debug\Library_MS.Properties.Resources.resources
+D:\Projects\C#\Library MS\obj\Debug\Library MS.csproj.GenerateResource.cache
+D:\Projects\C#\Library MS\obj\Debug\Library MS.csproj.CoreCompileInputs.cache
+D:\Projects\C#\Library MS\obj\Debug\Library MS.exe
+D:\Projects\C#\Library MS\obj\Debug\Library MS.pdb
+D:\Projects\C#\Library MS\obj\Debug\Library MS.csprojAssemblyReference.cache
+D:\Projects\C#\Library MS\obj\Debug\Library_MS.mdi_user.resources
+D:\Projects\C#\Library MS\obj\Debug\Library_MS.add_books.resources
+D:\Projects\C#\Library MS\obj\Debug\Library_MS.view_books.resources
+D:\Projects\C#\Library MS\obj\Debug\Library_MS.add_student_info.resources
