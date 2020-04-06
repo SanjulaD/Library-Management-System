@@ -16,7 +16,7 @@ namespace Library_MS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new add_student_info());
+            Application.Run(new login());
         }
     }
 }

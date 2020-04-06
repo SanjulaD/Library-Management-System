@@ -120,5 +120,23 @@ namespace Library_MS
             view_books vb = new view_books();
             vb.Show();
         }
+
+        private void addStudedntToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            add_student_info asi = new add_student_info();
+            asi.Show();
+        }
+
+        private void viewStudentInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view_student_info vsi = new view_student_info();
+            vsi.Show();
+        }
+
+        private void issueBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            issue_books ib = new issue_books();
+            ib.Show();
+        }
     }
 }
