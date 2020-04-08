@@ -124,12 +124,32 @@ namespace Library_MS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into issue_books values( '" + txt_enrollment.Text + "' , '" + txt_studentName.Text + "' , '" + txt_dept.Text + "' , '" + txt_sem.Text + "' , '" + txt_contact.Text + "' , '" + txt_email.Text + "' , '" + txt_books.Text +"' , '" + dateTimePicker1.Value.ToShortDateString() + "' )";
-            cmd.ExecuteNonQuery();
+            int books_qty = 0;
 
-            MessageBox.Show("Books Issued Successfully!");
+            SqlCommand cmd2 = con.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "select * from books_info where books_name = '" + txt_books.Text + "'";
+            cmd2.ExecuteNonQuery();
+
+            if(books_qty > 0)
+            {
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into issue_books values( '" + txt_enrollment.Text + "' , '" + txt_studentName.Text + "' , '" + txt_dept.Text + "' , '" + txt_sem.Text + "' , '" + txt_contact.Text + "' , '" + txt_email.Text + "' , '" + txt_books.Text + "' , '" + dateTimePicker1.Value.ToShortDateString() + "' )";
+                cmd.ExecuteNonQuery();
+
+                SqlCommand cmd1 = con.CreateCommand();
+                cmd1.CommandType = CommandType.Text;
+                cmd1.CommandText = "update books_info set available_qty = available_qty-1 where books_name = '" + txt_books.Text + "'";
+                cmd1.ExecuteNonQuery();
+
+                MessageBox.Show("Books Issued Successfully!");
+            }
+            
+            else
+            {
+                MessageBox.Show("Books not available");
+            }
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Library_MS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new issue_books());
         }
     }
 }
