@@ -16,7 +16,7 @@ namespace Library_MS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mdi_user());
+            Application.Run(new login());
         }
     }
 }
