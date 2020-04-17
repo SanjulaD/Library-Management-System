@@ -1,6 +1,6 @@
 # Library-Management-System
 
-Library Management System (C Sharp.net with SQL Server Desktop Application)
+Library Management System (C Sharp.net with SQL Server Desktop Application )
 
 * Login
 * Add Book Details
